@@ -4,11 +4,11 @@ pipeline {
          def toolbelt = tool 'sfdx'
     }
     stages {
-        stage('Build') {
+        stage('runitbro') {
      
             steps {
                 script{
-                    bat '%toolbelt%/sfdx force help'
+                    bat '%toolbelt%/sfdx force --help'
                 }
             }
         }
