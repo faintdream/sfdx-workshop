@@ -1,8 +1,11 @@
 pipeline {
     agent any
+    environment{
+         def toolbelt = tool 'sfdx'
+    }
     stages {
         stage('Build') {
-            def toolbelt = tool 'sfdx'
+     
             steps {
                 script{
                     bat '${toolbelt} force help'
