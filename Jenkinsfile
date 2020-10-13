@@ -3,8 +3,8 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                bat "sfdx help force"
+                bat 'sfdx'
             }
         }
     }
-}Î
+
