@@ -8,7 +8,7 @@ pipeline {
      
             steps {
                 script{
-                    bat '${toolbelt} force help'
+                    bat '%toolbelt% force help'
                 }
             }
         }
